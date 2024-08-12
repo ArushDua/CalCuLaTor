@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-body {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 320px;
+}
+
+input[type="text"] {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #E0E0E0;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+
+/* Button Styling */
+button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #E0E0E0;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 70px;
+    height: 70px;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #555;
+    transform: translateY(0);
+}
+
+/* Row Layout */
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:nth-child(4) { /* Operator buttons */
+    background-color: #FF5722;
+}
+
+button:nth-child(4):hover {
+    background-color: #FF7043;
+}
+
+button:nth-child(4):active {
+    background-color: #FF8A65;
+}
+
+button:nth-child(3):nth-last-child(1) { /* Equals button */
+    background-color: #388E3C;
+}
+
+button:nth-child(3):nth-last-child(1):hover {
+    background-color: #4CAF50;
+}
+
+button:nth-child(3):nth-last-child(1):active {
+    background-color: #66BB6A;
+}
+
+/* Clear Button */
+.row-5 button {
+    background-color: #D32F2F;
+    width: 100%;
+}
+
+.row-5 button:hover {
+    background-color: #E53935;
+}
+
+.row-5 button:active {
+    background-color: #F44336;
+}
